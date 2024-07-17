@@ -1,0 +1,26 @@
+package com.ProjectPractice;
+
+import java.util.Scanner;
+
+public class UserCurrentAgeCheck {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Enter your name: ");
+		String name = scanner.nextLine();
+
+		System.out.println("Enter your age: ");
+		int age = scanner.nextInt();
+
+		int currentYear = 2024;
+		int birthYear = currentYear - age - 1;
+
+		System.out.println("Hello, " + name + "!");
+		System.out.println("You were born in " + birthYear + ".");
+
+		scanner.close();
+	}
+
+}
